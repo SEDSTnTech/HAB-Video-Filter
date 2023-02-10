@@ -1,0 +1,3 @@
+/home/luke/Workspace/SEDS_Video_Filter/CMakeFiles/VideoFilter.dir
+/home/luke/Workspace/SEDS_Video_Filter/CMakeFiles/edit_cache.dir
+/home/luke/Workspace/SEDS_Video_Filter/CMakeFiles/rebuild_cache.dir
