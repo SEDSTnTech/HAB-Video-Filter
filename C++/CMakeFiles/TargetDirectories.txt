@@ -1,3 +1,0 @@
-/home/luke/Workspace/Git/HAB-Video-Filter/C++/CMakeFiles/VideoFilter.dir
-/home/luke/Workspace/Git/HAB-Video-Filter/C++/CMakeFiles/edit_cache.dir
-/home/luke/Workspace/Git/HAB-Video-Filter/C++/CMakeFiles/rebuild_cache.dir
