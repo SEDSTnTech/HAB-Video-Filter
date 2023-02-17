@@ -38,10 +38,6 @@ fps = capture.get(5)
 frameCount = int(capture.get(7))
 TotalNumPixels = height * width
 
-print("width:",width)
-print("height",height)
-print("fps",fps)
-
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')    # If output is desired in .avi format, change *'mp4v' to *'xvid' (output filename must also be .avi)
 out = cv2.VideoWriter(outputFileName, fourcc, fps, (width,height))
 duration = printTime(frameCount/fps)
@@ -75,6 +71,9 @@ while True:
     numWhitePixels = np.sum(mask == 255)
     numBlackPixels = np.sum(mask == 0)
 
+    # cv2.imshow('frame', frame) # will display original video in real time
+    # cv2.imshow('mask', frame)   # will display masked video in real time - Note: these slow down program
+
     if ((numWhitePixels / TotalNumPixels ) > threshold):    # Cuts frame if more than [threshold] of frame is blue
         #print(f"Frame {frameCount}: REMOVED")
         cutCount += 1
@@ -90,8 +89,6 @@ while True:
 
     frameCount += 1
 
-    # cv2.imshow('frame', frame) # will display original video in real time
-    # cv2.imshow('mask', mask)   # will display masked video in real time - Note: these slow down program
 if (lastRet == True):
     timeStamps.append(frameCount)
 
